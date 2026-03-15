@@ -117,3 +117,6 @@ def get_attendance_records(date_str: str, db: Session = Depends(get_db)):
     return {r.employee_id: r.status for r in records}
 
 
+@app.get("/")
+def home():
+    return {"message": "API working"}
