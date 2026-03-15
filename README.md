@@ -30,10 +30,13 @@ python -m venv venv
 .\venv\Scripts\activate
 # Install dependencies
 pip install -r requirements.txt
+# Configure database
+# Create a .env file with: DATABASE_URL=postgresql://user:pass@host:port/db
 # Run the server
 python run.py
 ```
 *Backend runs at: `http://127.0.0.1:8000`*
+
 
 ### 2. Frontend Setup
 ```powershell
